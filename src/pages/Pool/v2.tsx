@@ -248,23 +248,6 @@ export default function Pool() {
                         />
                       )
                   )}
-                  <RowFixed justify="center" style={{ width: '100%' }}>
-                    <ButtonOutlined
-                      as={Link}
-                      to="/migrate/v2"
-                      id="import-pool-link"
-                      style={{
-                        padding: '8px 16px',
-                        margin: '0 4px',
-                        borderRadius: '12px',
-                        width: 'fit-content',
-                        fontSize: '14px',
-                      }}
-                    >
-                      <ChevronsRight size={16} style={{ marginRight: '8px' }} />
-                      <Trans>Migrate Liquidity to V3</Trans>
-                    </ButtonOutlined>
-                  </RowFixed>
                 </>
               ) : (
                 <EmptyProposals>
