@@ -1383,6 +1383,36 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
+"@delioswap/core@1.0.1", "@delioswap/core@^1.0.1":
+  version "1.0.1"
+  resolved "https://npm.pkg.github.com/download/@delioswap/core/1.0.1/10a222ef12ce7a493b77b03f90496473c90cf269c9376fe48122e567d17c3b01#f916b25a5a9454a87fe485ebbd77321468c1cbb0"
+  integrity sha512-qUGp38E8EFVkvFciZFVSoGNgaA6pWVJPEefuUZEUVLBn7pSeXAb33KLXBLJ2uYENPy2I2f+NLJ35QGqTcevw3w==
+
+"@delioswap/lib@1.0.0":
+  version "1.0.0"
+  resolved "https://npm.pkg.github.com/download/@delioswap/lib/1.0.0/17cd8c1d6cc9349d0d3116cd53758c980c1de0f53bfb9cab4e00be5ca7fc473a#81b23f7bd3d1e1b5c0d2fc60e121fcc36c763311"
+  integrity sha512-N2DJOFgyT/BS9Vq47udDAFQaUDlbGhawdQVNYNJCvzg7qt213poXApKmDb3nPlANmq6SZB7U+37CmnvjsseQ1w==
+
+"@delioswap/periphery@^1.0.0":
+  version "1.0.0"
+  resolved "https://npm.pkg.github.com/download/@delioswap/periphery/1.0.0/cc85263ed9209b946bf8d2a8c4690b673c53eb7eb804541a120185d9ddd77a1b#9d7d41263796bf1229f1af2df1bcccedf110fbdf"
+  integrity sha512-rBVJGExmXo6VNhUaWi8YLmWnl66Xz0dtSk2GjHa9eA+MVIy0zuN3UNPWAuv/DQ+pxknGekIiJggWAi0L3/kkcQ==
+  dependencies:
+    "@delioswap/core" "1.0.1"
+    "@delioswap/lib" "1.0.0"
+
+"@delioswap/sdk@^1.0.0":
+  version "1.0.0"
+  resolved "https://npm.pkg.github.com/download/@delioswap/sdk/1.0.0/1dca2fcd84c9fa4b72837fc274d69b647a8a6dc11abcc89989b56e66fd4e5246#21ca96272e9952f89c0e00ccde588ff02186d03d"
+  integrity sha512-7j1kGDaWbm5N2cCOMd/GX3LtyszarT6xuE2V1DlgNuDzrRDXlSBTBt6Q6rGc6EzAoRm4Mqqsm93tt+OKaOSITw==
+  dependencies:
+    "@ethersproject/address" "^5.0.0"
+    "@ethersproject/solidity" "^5.0.0"
+    "@uniswap/sdk-core" "^3.0.0-alpha.3"
+    delioswap_test "^1.0.0"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+
 "@emotion/cache@^10.0.27":
   version "10.0.29"
   resolved "https://registry.npmjs.org/@emotion/cache/-/cache-10.0.29.tgz"
@@ -4341,11 +4371,6 @@
   resolved "https://registry.npmjs.org/@uniswap/governance/-/governance-1.0.2.tgz"
   integrity sha512-L7BzdI/asAINB2F6EvJuQcg5YhykNeEfZxJrn2RPIVvx+9A9u+opDuqnBK4SYnanrsr3UEX1NwWXwDHmyw2TjQ==
 
-"@uniswap/lib@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@uniswap/lib/-/lib-1.1.1.tgz"
-  integrity sha512-2yK7sLpKIT91TiS5sewHtOa7YuM8IuBXVl4GZv2jZFys4D2sY7K5vZh6MqD25TPA95Od+0YzCVq6cTF2IKrOmg==
-
 "@uniswap/lib@^4.0.1-alpha":
   version "4.0.1-alpha"
   resolved "https://registry.npmjs.org/@uniswap/lib/-/lib-4.0.1-alpha.tgz"
@@ -4380,34 +4405,10 @@
   resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.25.tgz#e4279cf2581b297723d82eafd1bed35273070f07"
   integrity sha512-XemgUs8YiYP7Xci+Wb8vPSnyxV9aTO6J5XLPzhZmgDFO1RY5JMnB0As8PJFia3Pg9JSRZ7+AahzxowPYhnUVWw==
 
-"@uniswap/v2-core@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@uniswap/v2-core/-/v2-core-1.0.0.tgz"
-  integrity sha512-BJiXrBGnN8mti7saW49MXwxDBRFiWemGetE58q8zgfnPPzQKq55ADltEILqOt6VFZ22kVeVKbF8gVd8aY3l7pA==
-
 "@uniswap/v2-core@1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@uniswap/v2-core/-/v2-core-1.0.1.tgz"
   integrity sha512-MtybtkUPSyysqLY2U210NBDeCHX+ltHt3oADGdjqoThZaFRDKwM6k1Nb3F0A3hk5hwuQvytFWhrWHOEq6nVJ8Q==
-
-"@uniswap/v2-periphery@^1.1.0-beta.0":
-  version "1.1.0-beta.0"
-  resolved "https://registry.npmjs.org/@uniswap/v2-periphery/-/v2-periphery-1.1.0-beta.0.tgz"
-  integrity sha512-6dkwAMKza8nzqYiXEr2D86dgW3TTavUvCR0w2Tu33bAbM8Ah43LKAzH7oKKPRT5VJQaMi1jtkGs1E8JPor1n5g==
-  dependencies:
-    "@uniswap/lib" "1.1.1"
-    "@uniswap/v2-core" "1.0.0"
-
-"@uniswap/v2-sdk@^3.0.0-alpha.2":
-  version "3.0.0-alpha.2"
-  resolved "https://registry.npmjs.org/@uniswap/v2-sdk/-/v2-sdk-3.0.0-alpha.2.tgz"
-  integrity sha512-LkGGZMdJueIIC3OBzgiBMV/1GdZgzTTf2qGEgBAxJUuCSFf5wZQgWNU4KOkoaBrl/FlEctAGSgGh3j3BhWKL5Q==
-  dependencies:
-    "@ethersproject/address" "^5.0.0"
-    "@ethersproject/solidity" "^5.0.0"
-    "@uniswap/sdk-core" "^3.0.0-alpha.3"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
 
 "@uniswap/v3-core@1.0.0":
   version "1.0.0"
@@ -8543,7 +8544,7 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-delioswap_test@^1.0.0, delioswap_test@^1.0.4:
+delioswap_test@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/delioswap_test/-/delioswap_test-1.0.4.tgz#760ba77c57e6d6ed939689afc4eaed5c96c00b39"
   integrity sha512-O5w45aAE05ehNYCYUGIRdtHXO0Ngrk00VNjmIDN5orgQ/Je5yiujXG5oVJiXhPqiNh5o4URG0r7RmYEKMdlpVQ==
@@ -8552,18 +8553,6 @@ delioswap_test@^1.0.0, delioswap_test@^1.0.4:
     "@ethersproject/solidity" "^5.0.0"
     "@uniswap/sdk-core" "^3.0.0-alpha.3"
     delioswap_test "^1.0.0"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-
-delioswap_v3_sdk@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/delioswap_v3_sdk/-/delioswap_v3_sdk-1.0.5.tgz#12dec047ca442109f0ecaae5bb46c8d60c2997e6"
-  integrity sha512-sWMSBaF8JPbNqkN2BtwPdcBzU4HdVwNpzrafDilZ6pNZWGCuVZHbOceBtYSuvcykw6lceACl2N1p7Ag1crtTeA==
-  dependencies:
-    "@ethersproject/abi" "^5.0.12"
-    "@ethersproject/solidity" "^5.0.9"
-    "@uniswap/sdk-core" "^3.0.1"
-    "@uniswap/v3-periphery" "1.0.0"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 

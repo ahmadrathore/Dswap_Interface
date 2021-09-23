@@ -167,13 +167,11 @@ export default function SideBar() {
               </Link>
             </MenuItem>
           )} */}
-          {chainId && chainId === SupportedChainId.MAINNET && (
-            <MenuItem icon={<FaVoteYea />}>
-              <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
-                <Trans>Vote</Trans>
-              </StyledNavLink>
-            </MenuItem>
-          )}
+          <MenuItem icon={<FaVoteYea />}>
+            <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
+              <Trans>Vote</Trans>
+            </StyledNavLink>
+          </MenuItem>
           <MenuItem icon={<FaGem />}>
             <StyledExternalLink id={`stake-nav-link`} href={infolink1}>
               <Trans>Charts</Trans>

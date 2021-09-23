@@ -1,9 +1,8 @@
 import JSBI from 'jsbi'
 import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@uniswap/sdk-core'
 // import { Trade as V2Trade } from '@uniswap/v2-sdk'
-import { Trade as V2Trade } from 'delioswap_test'
-// import { Trade as V3Trade } from '@uniswap/v3-sdk'
-import { Trade as V3Trade } from 'delioswap_v3_sdk'
+import { Trade as V2Trade } from '@delioswap/sdk'
+import { Trade as V3Trade } from '@uniswap/v3-sdk'
 import {
   ALLOWED_PRICE_IMPACT_HIGH,
   ALLOWED_PRICE_IMPACT_LOW,

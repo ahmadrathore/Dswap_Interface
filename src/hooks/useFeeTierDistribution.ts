@@ -1,5 +1,4 @@
-// import { FeeAmount } from '@uniswap/v3-sdk'
-import { FeeAmount } from 'delioswap_v3_sdk'
+import { FeeAmount } from '@uniswap/v3-sdk'
 import { Token, Currency } from '@uniswap/sdk-core'
 import { useFeeTierDistributionQuery } from 'state/data/enhanced'
 import { skipToken } from '@reduxjs/toolkit/query/react'

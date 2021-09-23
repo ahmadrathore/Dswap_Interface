@@ -23,7 +23,7 @@ import { SwitchLocaleLink } from '../../components/SwitchLocaleLink'
 import { useStakingInfo } from '../../state/stake/hooks'
 import { BIG_INT_ZERO } from '../../constants/misc'
 // import { Pair } from '@uniswap/v2-sdk'
-import { Pair } from 'delioswap_test'
+import { Pair } from '@delioswap/sdk'
 import { Trans } from '@lingui/macro'
 import { L2_CHAIN_IDS } from 'constants/chains'
 

@@ -1,5 +1,4 @@
-// import { computePoolAddress } from '@uniswap/v3-sdk'
-import { computePoolAddress } from 'delioswap_v3_sdk'
+import { computePoolAddress } from '@uniswap/v3-sdk'
 import { V3_CORE_FACTORY_ADDRESSES } from '../constants/addresses'
 import { IUniswapV3PoolStateInterface } from '../types/v3/IUniswapV3PoolState'
 import { Token, Currency } from '@uniswap/sdk-core'
@@ -7,8 +6,7 @@ import { useMemo } from 'react'
 import { useActiveWeb3React } from './web3'
 import { useMultipleContractSingleData } from '../state/multicall/hooks'
 
-// import { Pool, FeeAmount } from '@uniswap/v3-sdk'
-import { Pool, FeeAmount } from 'delioswap_v3_sdk'
+import { Pool, FeeAmount } from '@uniswap/v3-sdk'
 import { abi as IUniswapV3PoolStateABI } from '@uniswap/v3-core/artifacts/contracts/interfaces/pool/IUniswapV3PoolState.sol/IUniswapV3PoolState.json'
 import { Interface } from '@ethersproject/abi'
 
