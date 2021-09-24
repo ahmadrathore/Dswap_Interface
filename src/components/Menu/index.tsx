@@ -232,13 +232,13 @@ export default function Menu() {
             default:
               return (
                 <MenuFlyout>
-                  <MenuItem href="">
+                  <MenuItem href="https://infonet.gist.ac.kr/?page_id=9341">
                     <div>
                       <Trans>About</Trans>
                     </div>
                     <Info opacity={0.6} size={16} />
                   </MenuItem>
-                  <MenuItem href="">
+                  <MenuItem href="https://infonet.gist.ac.kr/?page_id=9343">
                     <div>
                       <Trans>Docs</Trans>
                     </div>

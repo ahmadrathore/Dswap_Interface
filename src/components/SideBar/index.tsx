@@ -140,7 +140,7 @@ export default function SideBar() {
           <MenuItem icon={<FaShoppingCart />}>
             <StyledNavLink
               id={`pool-nav-link`}
-              to={'/pool'}
+              to={'/pool/v2'}
               isActive={(match, { pathname }) =>
                 Boolean(match) ||
                 pathname.startsWith('/add') ||
@@ -167,17 +167,21 @@ export default function SideBar() {
               </Link>
             </MenuItem>
           )} */}
-          <MenuItem icon={<FaVoteYea />}>
-            <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
-              <Trans>Vote</Trans>
-            </StyledNavLink>
-          </MenuItem>
-          <MenuItem icon={<FaGem />}>
+
+          {/* 2021/09/23: Comment the Menu Item of Vote and Chart temporarily */}
+          {/* {chainId && chainId === SupportedChainId.MAINNET && (
+            <MenuItem icon={<FaVoteYea />}>
+              <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
+                <Trans>Vote</Trans>
+              </StyledNavLink>
+            </MenuItem>
+          )} */}
+          {/* <MenuItem icon={<FaGem />}>
             <StyledExternalLink id={`stake-nav-link`} href={infolink1}>
               <Trans>Charts</Trans>
               <sup></sup>
             </StyledExternalLink>
-          </MenuItem>
+          </MenuItem> */}
           {/*
           <MenuItem icon={<FaGem />}>
             <Link id={`pool-nav-link`} to={'/pool'}>
@@ -194,21 +198,21 @@ export default function SideBar() {
           </MenuItem>
           */}
           <MenuItem icon={<FaGem />}>
-            <StyledExternalLink id={`stake-nav-link`} href={'https://infonet.gist.ac.kr/'}>
-              <Trans>INFONET</Trans>
+            <StyledExternalLink id={`stake-nav-link`} href={'https://infonet.gist.ac.kr/?page_id=9341'}>
+              <Trans>About</Trans>
               <sup></sup>
             </StyledExternalLink>
           </MenuItem>
           <MenuItem icon={<FaGem />}>
-            <StyledExternalLink id={`stake-nav-link`} href={'http://ewww.gist.ac.kr/en/main.html'}>
-              <Trans>GIST</Trans>
+            <StyledExternalLink id={`stake-nav-link`} href={'https://github.com/Delioswap'}>
+              <Trans>Code</Trans>
               <sup></sup>
             </StyledExternalLink>
           </MenuItem>
           {chainId && chainId === SupportedChainId.MAINNET && (
             <MenuItem icon={<FaVoteYea />}>
-              <StyledExternalLink id={`stake-nav-link`} href={'http://172.26.16.177:30301/'}>
-                <Trans>Springboot WebServer</Trans>
+              <StyledExternalLink id={`stake-nav-link`} href={'https://infonet.gist.ac.kr/?page_id=9348'}>
+                <Trans>Blog</Trans>
                 <sup></sup>
               </StyledExternalLink>
             </MenuItem>
