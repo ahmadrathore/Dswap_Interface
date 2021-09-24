@@ -23,7 +23,7 @@ import { SwitchLocaleLink } from '../../components/SwitchLocaleLink'
 import { useStakingInfo } from '../../state/stake/hooks'
 import { BIG_INT_ZERO } from '../../constants/misc'
 // import { Pair } from '@uniswap/v2-sdk'
-import { Pair } from 'delioswap_test'
+import { Pair } from '@delioswap/sdk'
 import { Trans } from '@lingui/macro'
 import { L2_CHAIN_IDS } from 'constants/chains'
 
@@ -248,23 +248,6 @@ export default function Pool() {
                         />
                       )
                   )}
-                  <RowFixed justify="center" style={{ width: '100%' }}>
-                    <ButtonOutlined
-                      as={Link}
-                      to="/migrate/v2"
-                      id="import-pool-link"
-                      style={{
-                        padding: '8px 16px',
-                        margin: '0 4px',
-                        borderRadius: '12px',
-                        width: 'fit-content',
-                        fontSize: '14px',
-                      }}
-                    >
-                      <ChevronsRight size={16} style={{ marginRight: '8px' }} />
-                      <Trans>Migrate Liquidity to V3</Trans>
-                    </ButtonOutlined>
-                  </RowFixed>
                 </>
               ) : (
                 <EmptyProposals>

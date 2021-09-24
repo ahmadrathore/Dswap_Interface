@@ -1,7 +1,7 @@
 import JSBI from 'jsbi'
 import { Percent, CurrencyAmount, Token } from '@uniswap/sdk-core'
 // import { Pair } from '@uniswap/v2-sdk'
-import { Pair } from 'delioswap_test'
+import { Pair } from '@delioswap/sdk'
 import { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'react-feather'
 import { Link } from 'react-router-dom'
@@ -312,15 +312,6 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
             </ButtonSecondary>
             {userDefaultPoolBalance && JSBI.greaterThan(userDefaultPoolBalance.quotient, BIG_INT_ZERO) && (
               <RowBetween marginTop="10px">
-                <ButtonPrimary
-                  padding="8px"
-                  $borderRadius="8px"
-                  as={Link}
-                  to={`/migrate/v2/${pair.liquidityToken.address}`}
-                  width="32%"
-                >
-                  <Trans>Migrate</Trans>
-                </ButtonPrimary>
                 <ButtonPrimary
                   padding="8px"
                   $borderRadius="8px"

@@ -1,7 +1,6 @@
 // import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from '@uniswap/v2-sdk'
-import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from 'delioswap_test'
-// import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from '@uniswap/v3-sdk'
-import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from 'delioswap_v3_sdk'
+import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from '@delioswap/sdk'
+import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from '@uniswap/v3-sdk'
 import { constructSameAddressMap } from '../utils/constructSameAddressMap'
 import { SupportedChainId } from './chains'
 
@@ -14,9 +13,16 @@ export const MULTICALL_ADDRESS: AddressMap = {
   [SupportedChainId.ARBITRUM_ONE]: '0xadF885960B47eA2CD9B55E6DAc6B42b7Cb2806dB',
   [SupportedChainId.ARBITRUM_RINKEBY]: '0xa501c031958F579dB7676fF1CE78AD305794d579',
 }
-export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
-export const V2_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0x073b662F25d22a1Cda1e7a7100BffD6AEf37d394')
-
+// export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
+export const V2_FACTORY_ADDRESSES: AddressMap = {
+  [SupportedChainId.MAINNET]: '0x1E7586C1D538c0dA88B86b636741e8AF515c89BA',
+  [SupportedChainId.ROPSTEN]: '0x5cccd08354b6c16b37231cb17721dcc09489199b',
+}
+// export const V2_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0x073b662F25d22a1Cda1e7a7100BffD6AEf37d394')
+export const V2_ROUTER_ADDRESS: AddressMap = {
+  [SupportedChainId.MAINNET]: '0x26447C35D6DF073cF194F0886e88002003A24AE7',
+  [SupportedChainId.ROPSTEN]: '0x44103F691932F1Fb52e52d1bCE83E7F4892C0A69',
+}
 /**
  * The older V0 governance account
  */

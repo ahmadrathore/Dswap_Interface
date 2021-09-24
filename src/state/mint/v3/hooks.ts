@@ -13,7 +13,7 @@ import {
   TICK_SPACINGS,
   encodeSqrtRatioX96,
   nearestUsableTick,
-} from 'delioswap_v3_sdk/dist/' // '@uniswap/v3-sdk/dist/'
+} from '@uniswap/v3-sdk/dist/'
 import { Currency, Token, CurrencyAmount, Price, Rounding } from '@uniswap/sdk-core'
 import { useCallback, useMemo } from 'react'
 import { useActiveWeb3React } from '../../../hooks/web3'

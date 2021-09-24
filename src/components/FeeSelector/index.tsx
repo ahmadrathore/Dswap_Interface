@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-// import { FeeAmount } from '@uniswap/v3-sdk'
-import { FeeAmount } from 'delioswap_v3_sdk'
+import { FeeAmount } from '@uniswap/v3-sdk'
 import { Currency } from '@uniswap/sdk-core'
 import { Trans } from '@lingui/macro'
 import { AutoColumn } from 'components/Column'

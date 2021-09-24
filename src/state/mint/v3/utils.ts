@@ -5,7 +5,7 @@ import {
   TICK_SPACINGS,
   encodeSqrtRatioX96,
   TickMath,
-} from 'delioswap_v3_sdk/dist/' // from '@uniswap/v3-sdk/dist/'
+} from '@uniswap/v3-sdk/dist/'
 import { Price, Token } from '@uniswap/sdk-core'
 import JSBI from 'jsbi'
 

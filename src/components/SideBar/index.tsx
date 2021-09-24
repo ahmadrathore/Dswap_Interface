@@ -167,6 +167,7 @@ export default function SideBar() {
               </Link>
             </MenuItem>
           )} */}
+
           {/* 2021/09/23: Comment the Menu Item of Vote and Chart temporarily */}
           {/* {chainId && chainId === SupportedChainId.MAINNET && (
             <MenuItem icon={<FaVoteYea />}>
